@@ -1,0 +1,11 @@
+[Unit]
+Description=Robot LED Service
+After=redis-server.service
+
+[Service]
+Type=simple
+WorkingDirectory=/robot/led
+ExecStart=/robot/led/venv/bin/led
+
+[Install]
+WantedBy=multi-user.target

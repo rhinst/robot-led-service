@@ -1,0 +1,12 @@
+logging:
+  level: "INFO"
+  filename: ""
+redis:
+  host: "localhost"
+  port: 6379
+device:
+  name: "direct"
+  options:
+    leds:
+      - name: "red"
+        pin: 22
